@@ -1,0 +1,20 @@
+cout<<"    ___      ___         __        _     "<<endl;
+cout<<"   F _ ",  ,"___".       FJ       /.\    "<<endl;
+cout<<"  J `-' |  FJ---L]      J  L     //_\\   "<<endl;
+cout<<"  |  __/F J |   LJ      |  |    / ___ \  "<<endl;
+cout<<"  F |__/  | \___--.     F  J   / L___J \ "<<endl;
+cout<<" J__|     J\_____/F    J____L J__L   J__L"<<endl;
+cout<<" |__L      J_____F     |____| |__L   J__|"<<endl;
+                                         
+
+cout<<"            _            __     "<<endl;
+cout<<"          /' \         /'__`\   "<<endl;
+cout<<" __  __  /\_, \       /\ \/\ \  "<<endl;
+cout<<"/\ \/\ \ \/_/\ \      \ \ \ \ \ "<<endl;
+cout<<"\ \ \_/ |   \ \ \  __  \ \ \_\ \"<<endl;
+cout<<" \ \___/     \ \_\/\_\  \ \____/"<<endl;
+cout<<"  \/__/       \/_/\/_/   \/___/ "<<endl;
+                                
+                                
+
+

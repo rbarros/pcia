@@ -1,0 +1,54 @@
+RR-06-P-PCIA v1.0.0.151
+
+Projeto PCIA .cpp ultima modificação 09/08/2008.
+Data de modificação atual 11/09/08.
+
+/* Reformulando o projeto do programa PCIA.cpp.*/
+/* Descrição somente das novas funções para o programa.*/
+
+//constantes:
+
+#define HUMOR 50
+
+//variaveis da função:
+
+int HUMOR;
+string Status_Humor;
+
+//Funções
+
+void Humor_Status ()
+{
+  int PHUMOR;
+  
+  if(Humor<25)
+  {
+     status_humor=": (";
+  }
+  if(Humor==25)
+  { 
+     status_humor="; /";
+  }
+  if( (Humor>25)&&(Humor<50) )
+  {
+     status_humor=": /";
+  }
+  if( Humor==50)
+  {
+     status_humor=": |";
+  }
+  if( (Humor>50) && (Humor<75) )
+  {
+     status_humor=": \\";
+  }
+  if(Humor==75)
+  {
+     status_humor="; \\";
+  }
+  if(Humor>75)
+  {
+     status_humor=": )";
+  }
+
+} 
+

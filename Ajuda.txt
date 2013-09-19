@@ -1,0 +1,82 @@
+ ************************************************************************
+ ||           ___      ___         __        _             	       ||
+ ||          F _ ',  ,'___'.       FJ       /.\            	       ||
+ ||         J `-' |  FJ---L]      J  L     //_\\           	       ||
+ ||         |  __/F J |   LJ      |  |    / ___ \      		       ||
+ ||         F |__/  | \___--.     F  J   / L___J \     		       ||
+ ||        J__|     J\_____/F    J____L J__L   J__L    		       ||
+ ||        |__L      J_____F     |____| |__L   J__|        	       ||
+ ||                                                    		v1.0   ||
+  **********************************************************************
+ ||Autor: Ramon Silva de Barros			      DATA I 10/01/2007|| 
+ ||e-mail: rbarros_@hotmail.com					       ||
+ ||						      DATA F 14/10/2007||
+  ====================================================================== 
+
+
+	Este é uma programa desenvolvido em linguagem C++ utilizando o 
+compilador Dev-C++ 4.9.9.2. Este programa é um estudo sobre a inteligencia 
+artificial e os tradutores de idiomas. Foi feito para a pessoa poder 
+interagir com o computador e ensina-lo de modo que o mesmo possa se 
+comunicar, formar frases com sentido, e desenvolver uma conversa com o 
+usuario. O PCIA v1.0 foi desenvolvido em modo console para não atrapalhar 
+no desempenho da maquina assim ocupando poucos recursos do processador e 
+da memoria.
+
+	obs: Os comandos no console devem ser digitados com couchetes e 
+letra maiuscula exemplo - > [CLOSE] - Sair do sistema. Alguns comando 
+possuem variantes que é o caso do comando [NO] que pode ser digitado 
+sozinho ou com suas variantes entre chaves {SIG}.	
+	
+	Ao executar o PCIA aparecera no console:
+
+	[SYSTEM]? Significa que o programa esta pronto para interagir.
+	Ao pe da letra [SYSTEM] representa o computador e o ponto de 
+interrogação(?) informa ao usuario que ele esta em duvida a espera de 
+interação.
+
+	Se você digitar algo por exemplo a letra a(minuscula ou maiuscula) 
+aparecera o seguinte:
+
+	a [->] ? ASV
+        a(letra)
+	[->] Significa AQUILO.  
+	[->] Este sinal indica que o computador quer saber se a letra
+tem um significado ou tipo por exemplo: a é um artigo.
+
+        ? é duvida e ASV significa Artigo, Substantivo e Verbo.
+	Os comandos para as letras são:
+	[ARTIGO] {DEFINIDO}
+	[ARTIGO] {INDEFINIDO}
+	Caso não aja um significado ou tipo digite [NO]{SIG}
+
+	O computador armazena num arquivo texto para o usuario poder 
+ver o que o computador sabe. Caso a letra ou palavra ja esteja armazenada
+na memoria do programa aparecera o seguinte comando:
+
+	[MEMO][==] (letra ou palavra existente) Ele mostra tudo o que esta gravado 
+no arquivo para o usuario poder verificar o que ja ensinou ao PCIA.
+
+	==================================================================
+	|                 AJUDA - COMANDOS DO CONSOLE                    |
+	==================================================================
+	__________________________________________________________________
+	|                          COMANDOS                              |
+	==================================================================
+	|[HELP] = Mostra menu de ajuda.                                  |
+	==================================================================
+	|[CLOSE] = Sai do sistema.                                       |
+	==================================================================
+	|[->] = Aponta para a palavra indicando o que significa (troca). |
+	==================================================================
+	|[<-] = Igual ao comando anterior mais e usado para o computador.|
+	==================================================================
+	|[==]=Significa que a palavra,letra,comando e igual ou ja existe.|
+	==================================================================
+	| ASV = Artigo Substantivo Verbo E preciso digitar os comandos   |
+	|      [ARTIGO]   [SUBS]   [VERBO]  para definir o tipo da       |
+	|                                      palavra ou letra.         |
+	==================================================================
+	|[MEMO] = Significa o que o computador sabe(esta armazenado na   |
+	|memoria) e gravado em arquivo texto.                            |
+	==================================================================
