@@ -1,18 +1,18 @@
-# Project: PCIA
+# Project: pcia
 # Makefile created by Dev-C++ 4.9.9.2
 
-CPP  = g++.exe -D__DEBUG__
-CC   = gcc.exe -D__DEBUG__
+CPP  = g++.exe
+CC   = gcc.exe
 WINDRES = windres.exe
-RES  = PCIA_private.res
-OBJ  = main_v1.1.o $(RES)
-LINKOBJ  = main_v1.1.o $(RES)
-LIBS =  -L"lib"  -lgmon -pg  -g3 
-INCS =  -I"include" 
-CXXINCS =  -I"lib/gcc/mingw32/3.4.2/include"  -I"include/c++/3.4.2/backward"  -I"include/c++/3.4.2/mingw32"  -I"include/c++/3.4.2"  -I"include" 
+RES  = 
+OBJ  = src/main.o src/Core/AI.o src/Core/Menu.o $(RES)
+LINKOBJ  = src/main.o src/Core/AI.o src/Core/Menu.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib"  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
 BIN  = PCIA.exe
-CXXFLAGS = $(CXXINCS)   -ansi -traditional-cpp -pg -g3
-CFLAGS = $(INCS)   -ansi -traditional-cpp -pg -g3
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
 RM = rm -f
 
 .PHONY: all all-before all-after clean clean-custom
@@ -26,8 +26,11 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o "PCIA.exe" $(LIBS)
 
-main_v1.1.o: main_v1.1.cpp
-	$(CPP) -c main_v1.1.cpp -o main_v1.1.o $(CXXFLAGS)
+src/main.o: src/main.cpp
+	$(CPP) -c src/main.cpp -o src/main.o $(CXXFLAGS)
 
-PCIA_private.res: PCIA_private.rc 
-	$(WINDRES) -i PCIA_private.rc --input-format=rc -o PCIA_private.res -O coff 
+src/Core/AI.o: src/Core/AI.cpp
+	$(CPP) -c src/Core/AI.cpp -o src/Core/AI.o $(CXXFLAGS)
+
+src/Core/Menu.o: src/Core/Menu.cpp
+	$(CPP) -c src/Core/Menu.cpp -o src/Core/Menu.o $(CXXFLAGS)
