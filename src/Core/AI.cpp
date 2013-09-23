@@ -5,8 +5,8 @@ namespace Core {
     AI::AI(): status(true) {};
     AI::~AI(){};
     void AI::start() {
-         this->menu = new Menu();
-         cout << status << endl;
-         this->menu->setMenu("Menu principal")->getMenu();
+        this->menu = new Menu();
+        cout << status << endl;
+        this->menu->setMenu("Menu principal")->getMenu();
     };
 };
