@@ -8,6 +8,6 @@ namespace Core {
          this->menu = new Menu();
          cout << status << endl;
          this->menu->setMenu("Menu principal")->getMenu();
-         this->menu->setMenu("(1) - Ajuda")->getMenu();       
+         this->menu->setMenu("(1) - Ajuda")->getMenu();
     };
 };

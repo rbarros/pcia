@@ -10,7 +10,7 @@
 using namespace std;
 
 namespace Core {
-          class Exception : public std::exception { };
+    class Exception : public std::exception { };
 }
 
 #endif
