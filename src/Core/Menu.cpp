@@ -7,7 +7,7 @@ namespace Core {
           delete this->menu;
     };
     Menu* Menu::setMenu(char* texto) {
-          Core::Exception exception;
+          //Core::Exception exception;
           if(this->menu->texto == NULL) {
              //exception("Informe o texto do menu");
           }
